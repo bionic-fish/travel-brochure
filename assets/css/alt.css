@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* webpage wrapper for color overlay | color tinge/hue */
+.app__home {background-color: rgba(0, 0, 180, 0.3);}
+.app__activities {background-color: rgba(248, 144, 7, 0.3);}
+.app__destinations {background-color: rgba(37, 192, 44, 0.363);}
+.app__packages {background-color: rgba(219, 16, 84, 0.342);}
+
+/* background images + overlay for each page */
+.background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.bk__home {background-image: url(../img/main-bk.jpg);}
+.bk__activities {background-image: url(../img/sub-bk.jpg);}
+.bk__destinations {background-image: url(../img/sub-bk.jpg);}
+.bk__packages {background-image: url(../img/relax-bk.jpg);}
+
+/* span header coloring */
+/* home */
+span.blue {background-color: rgb(97, 145, 235); padding: 10px;}
+span.blueTxt {color: blue; text-shadow: #fff 2px; text-decoration: underline;}
+/* activities */
+span.orange {background-color: rgba(240, 141, 12, 0.6); padding: 10px;}
+span.orangeTxt {color: orange; text-shadow: #fff 2px; text-decoration: underline;}
+/* packages */
+span.red {background-color: rgba(222, 10, 59, 0.9); padding: 10px;}
+span.redTxt {color: red; text-shadow: #fff 2px; text-decoration: underline;}
+/* destinations */
+span.green {background-color: rgba(0, 250, 50, 0.6); padding: 10px;}
+span.greenTxt {color: green; text-shadow: #fff 2px; text-decoration: underline;}
+
+#packages button:hover {
+    background-color: rgba(222, 10, 59, 0.9);
+    
+}
