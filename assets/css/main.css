@@ -55,7 +55,7 @@ a {
     transition-property: all;
 }
 #navigation h2 {
-    font-size: 2em;
+    font-size: 1.4em;
     margin-top: 40px;
 }
 #navigation p {
@@ -359,8 +359,8 @@ button.enter__act {
 }
 
 
-/* media query for desktop [screen device above: 960px] */
-@media screen and (min-width: 960px) {
+/* media query for desktop [screen device above: 1060px] */
+@media screen and (min-width: 1060px) {
     .container {
         max-width: 1800px;
         margin: 0 auto;
@@ -478,8 +478,8 @@ button.enter__act {
     }
     
     .tall__box {
-        height: 700px;
-        width: 260px;
+        height: 400px;
+        width: 300px;
         background-position: center;
         background-size: cover;
         margin: 20px auto;
@@ -489,6 +489,13 @@ button.enter__act {
         
         border-radius: 10px;
         text-align: center;
+        
+        transition-duration: 1s;
+        transition-property: transform;
+        transition-timing-function: ease;
+    }
+    .tall__box:hover {
+        transform: scale(1.2);
     }
     .tall__box h5 {
         margin: auto;
@@ -516,5 +523,3 @@ button.enter__act {
     }
 
 }
-
-/* media query for tablet */
