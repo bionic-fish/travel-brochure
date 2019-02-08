@@ -37,17 +37,23 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+.nav__right .flex__item {
+    margin: 20px;
 }
 .lrg-nav {
-    margin-top: 45px; 
+    /* margin-top: 45px; */
+    padding: 22px;
+    margin: 10px auto; 
 }
 .lrg-nav a,
 .foot-nav a {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     letter-spacing: 8px;
-    padding: 20px;
-    margin: 10px auto;
+    /* padding: 200px; */
+    /* margin: 1000px auto; */
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
     transition-property: all;
@@ -208,8 +214,10 @@ footer.footer h2 {
     font-size: 1.7em;
 }
 footer i {
-    font-size: 160%;
-    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 200%;
+    padding: 15px;
 }
 
 
@@ -229,10 +237,21 @@ button.enter__act {
     font-size: 20px;
     padding: 20px;
 }
-button.enter:hover,
-button.enter__act:hover {transform: scale(1.1);}
-button.enter:hover {background-color: rgba(85, 100, 250, 0.7);}
-button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
+.enterBtn {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 20px;
+}
+.enterBtn:hover {background-color: rgba(85, 100, 250, 0.7);}
+
 
 .showcase_ball,
 .showcase_box {
@@ -295,9 +314,28 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
 .showcase__img-dest10 {background-image: url(../img/dest10.jpeg);}
 .showcase__img-dest11 {background-image: url(../img/dest11.jpg);}
 
+.light__box {
+    background-color: rgba(7, 7, 7, 0.2);
+    width: 80%;
+    padding: 20px;
+    color: #fff;
+}
+.light__box h5 {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #333;
+    font-size: 125%;
+    padding: 5px 0px;
+}
+.light__box p {
+    font-size: 75%;
+    text-decoration: underline;
+    padding: 2px;
+}
 .tall__box {
     width: 100%;
     height: 350px;
+    
     background-position: center;
         background-size: cover;
 }
@@ -348,7 +386,7 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
         background-size: cover;
         
         border-radius: 50%;
-        background-color:red;
+        background-color: #333;
         margin: 15px auto;
         display: flex;
         flex-wrap: nowrap;
@@ -395,7 +433,11 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
         margin: 20px;
     }
     
-
+    .flex__container {
+        /* display: inline-flex; */
+        margin: 10px auto;
+        max-width: 800px;
+    }
     header.header{
         padding: 0;
         margin: 0 auto;
@@ -419,29 +461,39 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
         text-decoration: underline;
         text-shadow: 1px 1px #000;
     }
+    #activities .flex {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        /* margin: 20px; */
+    }
+    
     .tall__box {
         height: 700px;
-        width: 33.3%;
+        width: 260px;
         background-position: center;
         background-size: cover;
-        margin: 10px auto;
+        margin: 20px auto;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
         border-radius: 10px;
+        text-align: center;
     }
     .tall__box h5 {
         margin: auto;
     }
     /* spans */
-    span.left {
+    .left {
         float: left;
         margin-left: 20px;
     }
-    span.right {
+    .right {
         float: right;
         
     }
-    span.nav__right {
+    .nav__right {
         float: right;
         margin-top: 25px;
         margin-right: 20px;
@@ -455,3 +507,5 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
     }
 
 }
+
+/* media query for tablet */

@@ -64,12 +64,12 @@ span.redTxt {color: red; text-shadow: #fff 2px; text-decoration: underline;}
 }
 
 /* page buttons */
-#destinations button:hover {
+#destinations .enterBtn:hover {
     background-color: rgba(0, 250, 50, 0.6);
 }
-#activities button:hover {
+#activities .enterBtn:hover {
     background-color: rgba(240, 141, 12, 0.6);
 }
-#packages button:hover {
+#packages .enterBtn:hover {
     background-color: rgba(222, 10, 59, 0.9);
 }
