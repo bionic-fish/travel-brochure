@@ -14,14 +14,11 @@ body {
     height: 100%;
     width: 100%;
 }
-
 a {
     color: #fff;
     text-decoration: none;
     padding: 1em;
 }
-
-
 /* company | website name  */
 .banner {
     font-family: 'Amatic SC', cursive;
@@ -29,7 +26,6 @@ a {
     margin: 0 auto;
     text-shadow: 1px 4px #000;
 }
-
 /* navigation */
 .nav__flex {
     display: flex;
@@ -58,12 +54,6 @@ a {
     transition-timing-function: ease-in-out;
     transition-property: all;
 }
-/* .lrg-nav a:hover,
-.foot-nav a:hover {
-    background-color: rgba(0,0,0,0.2);
-    font-weight: bolder;
-    border-radius: 1px 14px;
-} */
 #navigation h1 {
     font-size: 2em;
     margin-top: 40px;
@@ -293,10 +283,14 @@ button.enter__act {
 .showcase__img-thai {background-image: url(../img/thai.jpg);}
 .showcase__img-usa {background-image: url(../img/usa.jpg);}
 .showcase__img-euro {background-image: url(../img/euro.jpg);}
+/* act info */
+.box__img-act1 {background-image: url(../img/resorts.jpg);}
+.box__img-act2 {background-image: url(../img/adventure.jpg);}
+.box__img-act3 {background-image: url(../img/trekking.jpg);}
 /* act choice */
-.showcase_img-adv, .box__img-act1 {background-image: url(../img/adventure.jpg);}
-.showcase_img-rel, .box__img-act2 {background-image: url(../img/relax-bk.jpg);}
-.showcase_img-trk, .box__img-act3 {background-image: url(../img/hiking.jpg);}
+.showcase_img-adv {background-image: url(../img/adventure.jpg);}
+.showcase_img-rel {background-image: url(../img/relax-bk.jpg);}
+.showcase_img-trk {background-image: url(../img/hiking.jpg);}
 /* pakcks & grps */
 .showcase_img-grp {background-image: url(../img/groups1.jpg);}
 .showcase_img-schl {background-image: url(../img/groups2.jpg);}
@@ -336,8 +330,11 @@ button.enter__act {
     width: 100%;
     height: 350px;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: center;
-        background-size: cover;
+    background-size: cover;
 }
 
 .review {
@@ -398,6 +395,7 @@ button.enter__act {
     .section__container {
         max-width: 800px;
         margin: 0 auto;
+        
     }
     .nav__flex {
         flex-direction: row;
@@ -437,6 +435,7 @@ button.enter__act {
         /* display: inline-flex; */
         margin: 10px auto;
         max-width: 800px;
+        color: #fff;
     }
     header.header{
         padding: 0;
@@ -447,6 +446,12 @@ button.enter__act {
     .hideOnMob {
         /* visibility: visible; */
         display: block;
+    }
+    .light__box {
+        background-color: rgba(7, 7, 7, 0.2);
+        width: 80%;
+        padding: 20px;
+        color: #fff;
     }
     #main h2 {
         font-size:4em;
