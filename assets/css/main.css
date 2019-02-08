@@ -297,6 +297,11 @@ button.enter__act {
 .showcase_img-grp {background-image: url(../img/groups1.jpg);}
 .showcase_img-schl {background-image: url(../img/groups2.jpg);}
 .showcase_img-priv {background-image: url(../img/groups3.jpg);}
+
+/* packages.html */
+.box__pack1 {background-image: url(../img/pack1.jpg);}
+.box__pack2 {background-image: url(../img/pack2.jpg);}
+.box__pack3 {background-image: url(../img/pack3.jpg);}
 /* destinations.html img */
 .showcase__img-dest1 {background-image: url(../img/dest1.jpg);}
 .showcase__img-dest2 {background-image: url(../img/dest2.jpeg);}
