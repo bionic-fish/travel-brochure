@@ -41,7 +41,8 @@ a {
 .lrg-nav {
     margin-top: 45px; 
 }
-.lrg-nav a {
+.lrg-nav a,
+.foot-nav a {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     letter-spacing: 8px;
@@ -51,11 +52,12 @@ a {
     transition-timing-function: ease-in-out;
     transition-property: all;
 }
-.lrg-nav a:hover {
+/* .lrg-nav a:hover,
+.foot-nav a:hover {
     background-color: rgba(0,0,0,0.2);
     font-weight: bolder;
     border-radius: 1px 14px;
-}
+} */
 #navigation h1 {
     font-size: 2em;
     margin-top: 40px;
@@ -197,26 +199,20 @@ form input::placeholder {
 }
 /* footer props */
 footer.footer {
-    border-top: 4px solid #fff;
+    font-family: 'Shadows Into Light', cursive;
     padding: 10px 0px;
+    
 }
-footer .flex {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+footer.footer h2 {
+    text-decoration: underline;
+    font-size: 1.7em;
 }
-footer .flex .flex__item {
-    margin: 10px auto;
+footer i {
+    font-size: 160%;
+    padding: 10px;
 }
-footer .flex .flex__item {
-    border: 2px solid #fff;
-    border-radius: 10px;
-    font-family: 'Libre Baskerville', serif;
-    margin: 10px auto;
-    width: 50%;
-    padding: 5px;
 
-}
+
 
 /* main button props */
 button.enter,
@@ -224,14 +220,13 @@ button.enter__act {
     background: none;
     border: 2px solid #fff;
     border-radius: 10px;
+    color: #fff;
     font-family: 'Libre Baskerville', serif;
-    /* height: 50px; */
     transition-property: all;
     transition-duration: 2s;
     transition-timing-function: ease;
     text-decoration: underline;
     font-size: 20px;
-    /* width: 150px; */
     padding: 20px;
 }
 button.enter:hover,
@@ -275,14 +270,19 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
     /* height: 100%; */
     
 }
+/* popular dest */
+.showcase__img-thai {background-image: url(../img/thai.jpg);}
+.showcase__img-usa {background-image: url(../img/usa.jpg);}
+.showcase__img-euro {background-image: url(../img/euro.jpg);}
+/* act choice */
 .showcase_img-adv, .box__img-act1 {background-image: url(../img/adventure.jpg);}
 .showcase_img-rel, .box__img-act2 {background-image: url(../img/relax-bk.jpg);}
 .showcase_img-trk, .box__img-act3 {background-image: url(../img/hiking.jpg);}
-
-.showcase_img-grp1 {background-image: url(../img/groups1.jpg);}
-.showcase_img-grp2 {background-image: url(../img/groups2.jpg);}
-.showcase_img-grp3 {background-image: url(../img/groups3.jpg);}
-
+/* pakcks & grps */
+.showcase_img-grp {background-image: url(../img/groups1.jpg);}
+.showcase_img-schl {background-image: url(../img/groups2.jpg);}
+.showcase_img-priv {background-image: url(../img/groups3.jpg);}
+/* destinations.html img */
 .showcase__img-dest1 {background-image: url(../img/dest1.jpg);}
 .showcase__img-dest2 {background-image: url(../img/dest2.jpeg);}
 .showcase__img-dest3 {background-image: url(../img/dest3.jpg);}
@@ -315,7 +315,8 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
 
 /* hide heading break on mobile */
 .hideOnMob {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 
 
@@ -379,6 +380,22 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
         display: flex;
         flex-direction: row;
     }
+    footer.footer {
+        padding: 20px 12px;
+    }
+    footer .flex {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+        
+    }
+    footer .flex .flex__item {
+        max-width: 300px;
+        margin: 20px;
+    }
+    
+
     header.header{
         padding: 0;
         margin: 0 auto;
@@ -386,7 +403,8 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
         height: 50px;
     }
     .hideOnMob {
-        visibility: visible;
+        /* visibility: visible; */
+        display: block;
     }
     #main h2 {
         font-size:4em;

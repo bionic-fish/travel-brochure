@@ -42,6 +42,15 @@
     <!-- mobile & tablet: display block -->
     <!-- desktop:  branding = float left; nav = float right -->
     <section id="navigation" class="clearfix">
+        <!-- branding | heading -->
+        <div class="banner">
+            <div class="container">
+                <span class="left">
+                <h1>82°<span class="blue">NorthWest</span></h1>
+                <p>go beyond the summit</p>
+            </span>    
+            </div>
+        </div>
         <!-- main navigation bar -->
         <nav class="lrg-nav">
             <!-- nav elements positioned to right -->
@@ -49,34 +58,25 @@
                 <!-- flex nav elements -->
                 <div class="flex">
                     <div class="flex__item">
-                        <a href="index.html">Homepage</a>
+                        <a href="index.html" class="home__hover">Homepage</a>
                         <p>Digital Brochure</p>
                     </div>
                     <div class="flex__item">
-                        <a href="destinations.html">Destinations</a>
+                        <a href="destinations.html" class="dest__hover">Destinations</a>
                         <p>explore the world</p>
                     </div>
                     <div class="flex__item">
-                        <a href="activities.html">Activities</a>
+                        <a href="activities.html" class="act__hover">Activities</a>
                         <p>adventure or relax?</p>
                     </div>
                     <div class="flex__item">
-                        <a href="packages.html">Packages</a>
+                        <a href="packages.html" class="pack__hover">Packages</a>
                         <p>personal itinerary</p>
                     </div>
-                </div><!-- div.flx ends here-->
+                </div><!-- div.flex ends here-->
                 <hr class="hideOnMob">
             </span>
         </nav>
-        <!-- branding | heading -->
-        <div class="banner">
-                <div class="container">
-                    <span class="left">
-                    <h1>82°<span class="blue">NorthWest</span></h1>
-                    <p>go beyond the summit</p>
-                </span>    
-                </div>
-            </div>
     </section>
 
 <!-- main section intro heading  -->
@@ -85,9 +85,9 @@
     <section id="main" class="clearfix">
         <div class="section__container">
             <h4 id="colorChange__blue">Experience Wonder</h4>
-            <h2>Deluxe Deals</h2>
+            <h2>Digital Brochure</h2>
             <br>
-            <!-- <button class="enter clearfix"><a href="activities.html">Enter</a></button>    -->
+            <i class="fas fa-book-open"></i>
         </div>
     </section>
 
@@ -125,13 +125,13 @@
             destinations.</p>
             <br>
             <div class="flex">
-                <div class="showcase_box showcase__img-dest1">
+                <div class="showcase_box showcase__img-thai">
                     <h5>Thailand</h5>
                 </div>
-                <div class="showcase_box showcase__img-dest2">
+                <div class="showcase_box showcase__img-usa">
                     <h5>United States</h5>
                 </div>
-                <div class="showcase_box showcase__img-dest3">
+                <div class="showcase_box showcase__img-euro">
                     <h5>Europe</h5>
                 </div>
             </div>
@@ -182,18 +182,18 @@
             </p>
             <br>
             <div class="flex">
-                <div class="showcase_box showcase_img-grp1">
+                <div class="showcase_box showcase_img-grp">
                     <h5>Group Getaways</h5>
                 </div>
-                <div class="showcase_box showcase_img-grp2">
+                <div class="showcase_box showcase_img-schl">
                     <h5>School Trips</h5>
                 </div>
-                <div class="showcase_box showcase_img-grp3">
+                <div class="showcase_box showcase_img-priv">
                     <h5>Private Dining</h5>
                 </div>
             </div>
             <br>
-            <button class="enter"><a href="packages.html">Find Out More</a></button> 
+            <button class="enter"><a href="destinations.html">Find Out More</a></button> 
         </div>
     </section>
 
@@ -202,30 +202,32 @@
     <!-- desktop: display flex -->
     <footer class="footer">
         <div class="container">
-            <h4>82° NorthWest Tours Operate In 34+ Countries</h4>
+            <h3>82° NorthWest Tours Operate In 34+ Countries</h3>
+            <i class="fas fa-globe-americas"></i>
             <!-- site links -->
+        <nav class="foot-nav hideOnMob">
             <!-- flex nav elements -->
             <div class="flex">
                 <div class="flex__item">
-                    <a href="index.html">Homepage</a>
+                    <a href="index.html" class="home__hover">Homepage</a>
                     <p>Digital Brochure</p>
                 </div>
                 <div class="flex__item">
-                    <a href="destinations.html">Destinations</a>
+                    <a href="destinations.html" class="dest__hover">Destinations</a>
                     <p>explore the world</p>
                 </div>
                 <div class="flex__item">
-                    <a href="activities.html">Activities</a>
+                    <a href="activities.html" class="act__hover">Activities</a>
                     <p>adventure or relax?</p>
                 </div>
                 <div class="flex__item">
-                    <a href="packages.html">Packages</a>
+                    <a href="packages.html" class="pack__hover">Packages</a>
                     <p>personal itinerary</p>
                 </div>
-            </div><!-- div.flx ends here-->
+            </div><!-- div.flex ends here-->
+        </nav>
+        <h3><span class="blue">Developed by C D Harris | Site hosted on github pages</span></h3>
 
-            <h6>Developed by C D Harris<br>
-            Site hosted on github pages</h6>
         </div>
     </footer>
 

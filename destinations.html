@@ -49,19 +49,19 @@
                 <!-- flex nav elements -->
                 <div class="flex">
                     <div class="flex__item">
-                        <a href="index.html">Homepage</a>
+                        <a href="index.html" class="home__hover">Homepage</a>
                         <p>Digital Brochure</p>
                     </div>
                     <div class="flex__item">
-                        <a href="destinations.html">Destinations</a>
+                        <a href="destinations.html" class="dest__hover">Destinations</a>
                         <p>explore the world</p>
                     </div>
                     <div class="flex__item">
-                        <a href="activities.html">Activities</a>
+                        <a href="activities.html" class="act__hover">Activities</a>
                         <p>adventure or relax?</p>
                     </div>
                     <div class="flex__item">
-                        <a href="packages.html">Packages</a>
+                        <a href="packages.html" class="pack__hover">Packages</a>
                         <p>personal itinerary</p>
                     </div>
                 </div><!-- div.flex ends here-->
@@ -85,13 +85,15 @@
     <section id="main" class="clearfix">
         <div class="section__container">
             <h4><span class="greenTxt">Experience Wonder</span></h4>
-            <h2>Destinations</h2>
+            <h2>Exotic Destinations</h2>
+            <br>
+            <i class="far fa-sun"></i>
         </div>
     </section>
 <!-- section popular dest. -->
     <!-- mobile & tablet: img width 100% -->
     <!-- desktop: img radius 300px -->
-    <section class="content">
+    <section class="content" id="destinations">
         <div class="section__container">
             <h3>Popular Destinations</h3>
             <br>
@@ -183,7 +185,7 @@
             <!--  re structure  -->
             <br>
             <!-- non-linked buttons -->
-            <button class="enter">Find out more</button> 
+            <button class="enter"><a href="activities.html">Find out more</a></button> 
         </div>
     </section>
 
@@ -192,32 +194,36 @@
     <!-- desktop: display flex -->
     <footer class="footer">
         <div class="container">
-            <h4>82° NorthWest Tours Operate In 34+ Countries</h4>
+            <i class="fas fa-globe-americas"></i>
+            <br>
+            <h2>82° NorthWest Tours Operate In 34+ Countries</h2>
+            <br>
             <!-- site links -->
+        <nav class="foot-nav hideOnMob">
             <!-- flex nav elements -->
             <div class="flex">
                 <div class="flex__item">
-                    <a href="index.html">Homepage</a>
+                    <a href="index.html" class="home__hover">Homepage</a>
                     <p>Digital Brochure</p>
                 </div>
                 <div class="flex__item">
-                    <a href="destinations.html">Destinations</a>
+                    <a href="destinations.html" class="dest__hover">Destinations</a>
                     <p>explore the world</p>
                 </div>
                 <div class="flex__item">
-                    <a href="activities.html">Activities</a>
+                    <a href="activities.html" class="act__hover">Activities</a>
                     <p>adventure or relax?</p>
                 </div>
                 <div class="flex__item">
-                    <a href="packages.html">Packages</a>
+                    <a href="packages.html" class="pack__hover">Packages</a>
                     <p>personal itinerary</p>
                 </div>
-            </div><!-- div.flx ends here-->
-
-            <h6>Developed by C D Harris<br>
-            Site hosted on github pages</h6>
+            </div><!-- div.flex ends here-->
+        </nav>
+        <h3><span class="green">Developed by C D Harris | Site hosted on github pages</span></h3>
         </div>
     </footer>
+
 </div><!-- div.app ends here -->
 
 </div><!-- div.background__home -->
