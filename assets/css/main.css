@@ -1,4 +1,9 @@
 /* 
+    Color Guide:
+        index.html = blue
+        destinations.html = green
+        activities.html = orange
+        packages.html = red
     Fonts Guide:
         Navigation [top + lrg.nav txt] - font-family: 'Shadows Into Light', cursive;
         Main [headings + lrg.nav links + form placeholder text] - font-family: 'Libre Baskerville', serif;
@@ -9,23 +14,44 @@
     padding: 0;
     margin: 0;
 }
-body {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-}
 a {
     color: #fff;
     text-decoration: none;
     padding: 1em;
 }
-/* company | website name  */
 .banner {
     font-family: 'Amatic SC', cursive;
     font-size: 2.2em;
     margin: 0 auto;
     text-shadow: 1px 4px #000;
 }
+body {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+
+/* section props */
+section {
+    color: #fff;
+    margin: 10px auto;
+    padding: 10px;
+}
+section h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    text-decoration: underline;
+}
+section p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #000;
+}
+
+
 /* navigation */
 .nav__flex {
     display: flex;
@@ -39,17 +65,14 @@ a {
     margin: 20px;
 }
 .lrg-nav {
-    /* margin-top: 45px; */
-    padding: 22px;
     margin: 10px auto; 
+    padding: 22px;
 }
 .lrg-nav a,
 .foot-nav a {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     letter-spacing: 8px;
-    /* padding: 200px; */
-    /* margin: 1000px auto; */
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
     transition-property: all;
@@ -63,17 +86,8 @@ a {
     color: #fff;
     font-family: 'Shadows Into Light', cursive;
 }
-/* generic container for desktop placement */
-.container,
-.section__container {
-    color: #fff;
 
-}
-section {
-    padding: 10px;
-    margin: 10px auto;
-    /* height: 30vh; */
-}
+
 /* header props [top nav bar] */
 .header a {
     font-family: 'Shadows Into Light', cursive;
@@ -85,27 +99,20 @@ section {
     padding: 5px;
     text-decoration: underline;
 }
-.flex__container {
-    color: #fff;
-}
+
 /* main section props */
 #main {
-    font-family: 'Libre Baskerville', serif;
-    /* height: 55vh; */
-    display: flex;
-    justify-content: center;
     align-items: center;
-    /* padding: 25px; */
-    
+    display: flex;
+    font-family: 'Libre Baskerville', serif;
+    justify-content: center;
 }
 #main h2 {
-    
     font-size:3em;
     letter-spacing: 1px;
     padding-bottom: 20px;
     text-shadow: 1px 1px #000;
     text-decoration: underline;
-    
 }
 #main h4 {
     color: rgba(85, 100, 250, 0.9);
@@ -119,25 +126,12 @@ section {
 }
 #main p {
     font-family: 'Amatic SC', cursive;
-    
     font-size: 1em;
-    margin-top: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-/* section props */
-section h3 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2em;
-    text-decoration: underline;
-}
-section p {
-    /* font-family: 'Shadows Into Light', cursive; */
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.2em;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px #000;
-}
+
 /* search form props */
 form {
     /* background-color: #fff; */
@@ -213,8 +207,8 @@ footer i {
 
 
 /* main button props */
-button.enter,
-button.enter__act {
+button.enter
+ {
     background: none;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -240,8 +234,12 @@ button.enter__act {
     font-size: 20px;
     padding: 20px;
 }
+/* home buttons */
 .enterBtn:hover {background-color: rgba(85, 100, 250, 0.7);}
-
+/* destinations buttons */
+.enter__dest:hover {background-color: rgba(0, 250, 50, 0.6);}
+/* activities buttons */
+.enter__act:hover {background-color: rgba(240, 141, 12, 0.6);}
 
 .showcase_ball,
 .showcase_box {
@@ -267,82 +265,44 @@ button.enter__act {
 }
 .showcase_ball h5,
 .showcase_box h5 {
-    /* background-color: rgba(85, 100, 250, 0.7); */
+    align-items: center;
     font-family: 'Amatic SC', cursive;
     font-size: 2.5em;
+    justify-content: center;
     letter-spacing: 1px;
-    justify-content: center;
-    align-items: center;
-    
     text-shadow: rgb(97, 145, 235) 2px 2px;
-    /* width: 100%; */
-    /* height: 100%; */
-    
 }
-/* popular dest */
-.showcase__img-thai {background-image: url(../img/thai.jpg);}
-.showcase__img-usa {background-image: url(../img/usa.jpg);}
-.showcase__img-euro {background-image: url(../img/euro.jpg);}
-/* act info */
-.box__img-act1 {background-image: url(../img/resorts.jpg);}
-.box__img-act2 {background-image: url(../img/adventure.jpg);}
-.box__img-act3 {background-image: url(../img/trekking.jpg);}
-/* act choice */
-.showcase_img-adv {background-image: url(../img/adventure.jpg);}
-.showcase_img-rel {background-image: url(../img/relax-bk.jpg);}
-.showcase_img-trk {background-image: url(../img/hiking.jpg);}
-/* pakcks & grps */
-.showcase_img-grp {background-image: url(../img/groups1.jpg);}
-.showcase_img-schl {background-image: url(../img/groups2.jpg);}
-.showcase_img-priv {background-image: url(../img/groups3.jpg);}
-
-/* packages.html */
-.box__pack1 {background-image: url(../img/pack1.jpg);}
-.box__pack2 {background-image: url(../img/pack2.jpg);}
-.box__pack3 {background-image: url(../img/pack3.jpg);}
-/* destinations.html img */
-.showcase__img-dest1 {background-image: url(../img/dest1.jpg);}
-.showcase__img-dest2 {background-image: url(../img/dest2.jpeg);}
-.showcase__img-dest3 {background-image: url(../img/dest3.jpg);}
-.showcase__img-dest4 {background-image: url(../img/dest4.jpg);}
-.showcase__img-dest5 {background-image: url(../img/dest5.jpeg);}
-.showcase__img-dest6 {background-image: url(../img/dest6.jpg);}
-.showcase__img-dest7 {background-image: url(../img/dest7.jpg);}
-.showcase__img-dest8 {background-image: url(../img/dest8.jpg);}
-.showcase__img-dest9 {background-image: url(../img/dest9.jpg);}
-.showcase__img-dest10 {background-image: url(../img/dest10.jpeg);}
-.showcase__img-dest11 {background-image: url(../img/dest11.jpg);}
-
-.light__box {
-    background-color: rgba(7, 7, 7, 0.2);
-    width: 80%;
-    padding: 20px;
-    color: #fff;
-}
-.light__box h5 {
-    font-family: 'Libre Baskerville', serif;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px #333;
-    font-size: 125%;
-    padding: 5px 0px;
-}
-.light__box p {
-    font-size: 75%;
-    text-decoration: underline;
-    padding: 2px;
-}
+/* activities.html imgs */
 .tall__box {
-    border-radius: 10px;
-    border: 2px solid #fff;
-    width: 100%;
-    height: 350px;
-    
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
 }
+.light__box {
+    background-color: rgba(7, 7, 7, 0.2);
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+}
+.light__box h5 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 125%;
+    letter-spacing: 2px;
+    padding: 5px 0px;
+    text-shadow: 2px 2px #333;
+}
+.light__box p {
+    font-size: 75%;
+    padding: 2px;
+    text-decoration: underline;
+}
+
 
 .review {
     border: 2px #fff solid;
@@ -356,32 +316,36 @@ button.enter__act {
 }
 
 /* hide heading break on mobile */
-.hideOnMob {
-    /* visibility: hidden; */
-    display: none;
-}
+.hideOnMob {display: none;}
 
 
 /* media query for desktop [screen device above: 1060px] */
 @media screen and (min-width: 1060px) {
+    /* container props */
     .container {
         max-width: 1800px;
         margin: 0 auto;
+    }
+    .flex__container {
+        margin: 10px auto;
+        max-width: 800px;
     }
     .showcase__box {
         max-width: 900px;
         width: 900px;
     }
+    .section__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    /* destination.html img props */
     .showcase_box:hover,
     .showcase_ball:hover {
-        transform: translateY(-30px);
-        transform: scale(1.2);
-        
-        
         font-size: 120%;
         font-weight: bold;
         text-transform: uppercase;
-        /* border-radius: 10px; */
+        transform: translateY(-30px);
+        transform: scale(1.2);
     }
     .showcase_ball {
         width: 250px;
@@ -399,14 +363,9 @@ button.enter__act {
         
     }
     
-    .section__container {
-        max-width: 800px;
-        margin: 0 auto;
-        
-    }
-    .nav__flex {
-        flex-direction: row;
-    }
+    
+    
+    /* flex props */
     .flex {
         display: flex;
         flex-direction: row;
@@ -419,6 +378,25 @@ button.enter__act {
         flex-flow: row;
         padding: 10px;
     }
+
+    
+    /* navigation props */
+    .nav__flex {
+        flex-direction: row;
+    }
+    /* float positioning */
+    .left {float: left; margin-left: 20px;}
+    .right {float: right;}
+    .nav__right {
+        float: right;
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+    /* float clear */
+    .clearfix {
+        clear: both;
+    }
+    
     form {
         display: flex;
         flex-direction: row;
@@ -428,43 +406,16 @@ button.enter__act {
         width: 150%;
         
     }
-    footer.footer {
-        padding: 20px 12px;
-    }
-    footer .flex {
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-        padding: 15px;
-        
-    }
-    footer .flex .flex__item {
-        max-width: 300px;
-        margin: 20px;
-    }
     
-    .flex__container {
-        /* display: inline-flex; */
-        margin: 10px auto;
-        max-width: 800px;
-        
-    }
+    
     header.header{
         padding: 0;
         margin: 0 auto;
         margin-right: 20px;
         height: 50px;
     }
-    .hideOnMob {
-        /* visibility: visible; */
-        display: block;
-    }
-    .light__box {
-        background-color: rgba(7, 7, 7, 0.2);
-        width: 80%;
-        padding: 20px;
-        color: #fff;
-    }
+    
+    
     #main h2 {
         font-size:4em;
         text-shadow: 2px 2px #000;
@@ -478,56 +429,50 @@ button.enter__act {
         text-decoration: underline;
         text-shadow: 1px 1px #000;
     }
+
+    /* footer props */
+    footer.footer {padding: 20px 12px;}
+    footer .flex {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+    }
+    footer .flex .flex__item {
+        margin: 20px;
+        max-width: 300px;
+    }
+    /* activities.html img */
     #activities .flex {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        /* margin: 20px; */
     }
-    
     .tall__box {
-        height: 400px;
-        width: 300px;
+        align-items: center;
         background-position: center;
         background-size: cover;
-        margin: 20px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
         border-radius: 10px;
-        text-align: center;
-        
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        margin: 20px auto;
+        text-align: center; 
         transition-duration: 1s;
         transition-property: transform;
         transition-timing-function: ease;
+        width: 300px;
     }
-    .tall__box:hover {
-        transform: scale(1.2);
-    }
-    .tall__box h5 {
-        margin: auto;
-    }
-    /* spans */
-    .left {
-        float: left;
-        margin-left: 20px;
-    }
-    .right {
-        float: right;
-        
-    }
-    .nav__right {
-        float: right;
-        margin-top: 25px;
-        margin-right: 20px;
-    }
-    span.blue {
-        background-color: rgb(97, 145, 235);
+    .tall__box:hover {transform: scale(1.2);}
+    .tall__box h5 {margin: auto;}
+    .light__box {
+        background-color: rgba(7, 7, 7, 0.2);
+        width: 80%;
+        padding: 20px;
+        color: #fff;
     }
     
-    .clearfix {
-        clear: both;
-    }
+    /* show heading break on desktop */
+    .hideOnMob {display: block;}
 
 }

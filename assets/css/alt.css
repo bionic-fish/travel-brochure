@@ -1,23 +1,70 @@
+/* index.html - destinations */
+.showcase__img-thai {background-image: url(../img/thai.jpg);}
+.showcase__img-usa {background-image: url(../img/usa.jpg);}
+.showcase__img-euro {background-image: url(../img/euro.jpg);}
+/* index.html - activities */
+.showcase_img-adv {background-image: url(../img/adventure.jpg);}
+.showcase_img-rel {background-image: url(../img/relax-bk.jpg);}
+.showcase_img-trk {background-image: url(../img/hiking.jpg);}
+/* index.html - packages */
+.showcase_img-grp {background-image: url(../img/groups1.jpg);}
+.showcase_img-schl {background-image: url(../img/groups2.jpg);}
+.showcase_img-priv {background-image: url(../img/groups3.jpg);}
+
+/* activities.html - content */
+.box__img-act1 {background-image: url(../img/resorts.jpg);}
+.box__img-act2 {background-image: url(../img/adventure.jpg);}
+.box__img-act3 {background-image: url(../img/trekking.jpg);}
+/* packages.html - content */
+.box__pack1 {background-image: url(../img/pack1.jpg);}
+.box__pack2 {background-image: url(../img/pack2.jpg);}
+.box__pack3 {background-image: url(../img/pack3.jpg);}
+
+/* destinations.html content */
+.showcase__img-dest1 {background-image: url(../img/dest1.jpg);}
+.showcase__img-dest2 {background-image: url(../img/dest2.jpeg);}
+.showcase__img-dest3 {background-image: url(../img/dest3.jpg);}
+.showcase__img-dest4 {background-image: url(../img/dest4.jpg);}
+.showcase__img-dest5 {background-image: url(../img/dest5.jpeg);}
+.showcase__img-dest6 {background-image: url(../img/dest6.jpg);}
+.showcase__img-dest7 {background-image: url(../img/dest7.jpg);}
+.showcase__img-dest8 {background-image: url(../img/dest8.jpg);}
+.showcase__img-dest9 {background-image: url(../img/dest9.jpg);}
+.showcase__img-dest10 {background-image: url(../img/dest10.jpeg);}
+.showcase__img-dest11 {background-image: url(../img/dest11.jpg);}
+
 /* webpage wrapper for color overlay | color tinge/hue */
 /* home  [overlay = blue]*/
 .app__home {background-color: rgba(0, 0, 180, 0.3);}
 /* home spans */
-span.blue {background-color: rgb(97, 145, 235); padding: 10px; border-radius: 10px;}
-span.blueTxt {color: blue; text-shadow: #fff 2px; text-decoration: underline;}
+span.blue {background-color: rgb(97, 145, 235); padding: 10px;}
+span.blueTxt {
+    color: blue;
+    text-shadow: #fff 2px;
+    text-decoration: underline;
+}
 /* destinations [overlay = green] */
 .app__destinations {background-color: rgba(37, 192, 44, 0.363);}
-/* dest spans */
-span.green {background-color: rgba(0, 250, 50, 0.6); padding: 10px; border-radius: 10px;}
+/* destinations spans */
+span.green {
+    background-color: rgba(0, 250, 50, 0.6);
+    padding: 10px;
+    }
 span.greenTxt {color: green; text-shadow: #fff 2px; text-decoration: underline;}
 /* activities [overlay = orange] */
 .app__activities {background-color: rgba(248, 144, 7, 0.3);}
-/* act spans */
-span.orange {background-color: rgba(240, 141, 12, 0.6); padding: 10px; border-radius: 10px;}
+/* activities spans */
+span.orange {
+    background-color: rgba(240, 141, 12, 0.6);
+    padding: 10px;}
 span.orangeTxt {color: orange; text-shadow: #fff 2px; text-decoration: underline;}
 /* packages [overlay = red] */
 .app__packages {background-color: rgba(219, 16, 84, 0.342);}
-/* pack spans */
-span.red {background-color: rgba(222, 10, 59, 0.9); padding: 4px; border-radius: 10px;}
+/* packages.html spans */
+span.red {
+    background-color: rgba(222, 10, 59, 0.9);
+    padding: 4px;
+}
 span.redTxt {color: red; text-shadow: #fff 2px; text-decoration: underline;}
 
 /* page specific backgrounds */
@@ -34,8 +81,7 @@ span.redTxt {color: red; text-shadow: #fff 2px; text-decoration: underline;}
     height: 100%;
     width: 100%;
 }
-
-/* page hover links */
+/* navigation hover links */
 .home__hover,
 .dest__hover,
 .act__hover,
@@ -47,34 +93,22 @@ span.redTxt {color: red; text-shadow: #fff 2px; text-decoration: underline;}
 }
 .home__hover:hover {
     background-color: rgb(97, 145, 235);
-    font-weight: bolder;
     border-radius: 12px;
-    
+    font-weight: bolder;
 }
 .dest__hover:hover {
     background-color: rgba(0, 250, 50, 0.6);
-    font-weight: bolder;
     border-radius: 12px;
+    font-weight: bolder;
 }
 .act__hover:hover {
     background-color: rgba(240, 141, 12, 0.6);
-    font-weight: bolder;
     border-radius: 12px;
-    
+    font-weight: bolder;
 }
 .pack__hover:hover {
     background-color: rgba(222, 10, 59, 0.9);    
-    font-weight: bolder;
     border-radius: 12px;
+    font-weight: bolder;
 }
 
-/* page buttons */
-#destinations .enterBtn:hover {
-    background-color: rgba(0, 250, 50, 0.6);
-}
-#activities .enterBtn:hover {
-    background-color: rgba(240, 141, 12, 0.6);
-}
-#packages .enterBtn:hover {
-    background-color: rgba(222, 10, 59, 0.9);
-}
