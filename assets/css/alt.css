@@ -2,22 +2,22 @@
 /* home  [overlay = blue]*/
 .app__home {background-color: rgba(0, 0, 180, 0.3);}
 /* home spans */
-span.blue {background-color: rgb(97, 145, 235); padding: 10px;}
+span.blue {background-color: rgb(97, 145, 235); padding: 10px; border-radius: 10px;}
 span.blueTxt {color: blue; text-shadow: #fff 2px; text-decoration: underline;}
 /* destinations [overlay = green] */
 .app__destinations {background-color: rgba(37, 192, 44, 0.363);}
 /* dest spans */
-span.green {background-color: rgba(0, 250, 50, 0.6); padding: 10px;}
+span.green {background-color: rgba(0, 250, 50, 0.6); padding: 10px; border-radius: 10px;}
 span.greenTxt {color: green; text-shadow: #fff 2px; text-decoration: underline;}
 /* activities [overlay = orange] */
 .app__activities {background-color: rgba(248, 144, 7, 0.3);}
 /* act spans */
-span.orange {background-color: rgba(240, 141, 12, 0.6); padding: 10px;}
+span.orange {background-color: rgba(240, 141, 12, 0.6); padding: 10px; border-radius: 10px;}
 span.orangeTxt {color: orange; text-shadow: #fff 2px; text-decoration: underline;}
 /* packages [overlay = red] */
 .app__packages {background-color: rgba(219, 16, 84, 0.342);}
 /* pack spans */
-span.red {background-color: rgba(222, 10, 59, 0.9); padding: 10px;}
+span.red {background-color: rgba(222, 10, 59, 0.9); padding: 4px; border-radius: 10px;}
 span.redTxt {color: red; text-shadow: #fff 2px; text-decoration: underline;}
 
 /* page specific backgrounds */

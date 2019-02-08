@@ -140,6 +140,8 @@ section p {
 }
 /* search form props */
 form {
+    /* background-color: #fff; */
+    width: 100%;
     font-family: 'Amatic SC', cursive;
     text-align: left;
     font-size: 20px;
@@ -164,19 +166,15 @@ form input {
     transition-duration: 500ms;
     transition-property: all;
 }
-form input:focus {
-    background-color: rgb(97, 145, 235);
-    width: 250%;
-    
-}
+
 
 
 form input[type="submit"] {
-    background: #333;
-    opacity: 0.6;
+    background: rgba(222, 10, 59, 0.5);
+    /* opacity: 0.6; */
     text-align: center;
     /* height: 30px; */
-    border-radius: 15px;
+    /* border-radius: 15px; */
     
     width: 50%;
     padding: 20px;
@@ -424,6 +422,11 @@ button.enter__act {
     form {
         display: flex;
         flex-direction: row;
+    }
+    form input:focus {
+        background-color: rgba(222, 10, 59, 0.5);
+        width: 150%;
+        
     }
     footer.footer {
         padding: 20px 12px;
