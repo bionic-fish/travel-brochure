@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | Travel Brochure | WebApp</title>
+    <title>Destinations | Travel Brochure | WebApp</title>
     <!-- ext css -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/alt.css">
@@ -20,20 +20,20 @@
 </head>
 <body>
 <!-- background image div -->
-<div class="background bk__home">
+<div class="background bk__destinations">
 <!-- web wrapper -->
-    <!-- mobile, tablet & desktop: overlay blue hue | tinge  -->
-<div class="app__home">
+<!-- mobile, tablet & desktop: overlay green hue | tinge  -->
+<div class="app__destinations">
 <!-- header -->
     <!-- mobile & tablet: display block -->
     <!-- desktop: display inline -->
     <header class="header clearfix">
         <div class="container">
             <span class="right">
-                <a href="#">Newsletter</a>
-                <a href="#">Register</a>
-                <a href="#">Contact</a>
-                <button class="header-btn">0400 123 456</button>
+                <a href="">Newsletter</a>
+                <a href="">Register</a>
+                <a href="">Contact</a>
+                <span class="green">0400 123 456</span>
             </span>
         </div>
     </header>
@@ -64,7 +64,7 @@
                         <a href="packages.html">Packages</a>
                         <p>personal itinerary</p>
                     </div>
-                </div><!-- div.flx ends here-->
+                </div><!-- div.flex ends here-->
                 <hr class="hideOnMob">
             </span>
         </nav>
@@ -72,50 +72,25 @@
         <div class="banner">
                 <div class="container">
                     <span class="left">
-                    <h1>82°<span class="blue">NorthWest</span></h1>
+                    <h1>82°<span class="green">NorthWest</span></h1>
                     <p>go beyond the summit</p>
                 </span>    
                 </div>
             </div>
     </section>
 
-<!-- main section intro heading  -->
+<!-- main section heading  -->
     <!-- mobile & tablet: content center -->
     <!-- desktop: content center & large -->
     <section id="main" class="clearfix">
         <div class="section__container">
-            <h4 id="colorChange__blue">Experience Wonder</h4>
-            <h2>Deluxe Deals</h2>
-            <br>
-            <!-- <button class="enter clearfix"><a href="activities.html">Enter</a></button>    -->
+            <h4><span class="greenTxt">Experience Wonder</span></h4>
+            <h2>Destinations</h2>
         </div>
     </section>
-
-<!-- about section -->
-    <!-- mobile & tablet : content center -->
-    <!-- desktop: content center -->
-    <section class="content">
-        <div class="section__container">
-            <h3>About 82° NorthWest</h3>
-            <br>
-            <p>82­° NorthWest is a nationally recognized and globally accredited travel agency,
-            offering some of the worlds most hidden gems & tropical paradises at extra low costs!</p>
-            <br>
-            <div class="review">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <br>
-                <p>4 Star International Rating</p>
-                <q>International Travel Agency</q>
-            </div>
-            <br>
-            <p>Browse our site for an abundance of travel and holiday options, group and school tours,
-            snow sport guides, tours, hikking & trekking expeditions available.</p>
-        </div>
-    </section>
-
- <!-- destinations section content -->
-    <!-- mobile & tablet: showcase img = 90% width -->
-    <!-- desktop: showcase img = 300x300 circle -->
+<!-- section popular dest. -->
+    <!-- mobile & tablet: img width 100% -->
+    <!-- desktop: img radius 300px -->
     <section class="content">
         <div class="section__container">
             <h3>Popular Destinations</h3>
@@ -124,76 +99,91 @@
             know how to party in most parts of the globe, so we have setup packages at popular tourist 
             destinations.</p>
             <br>
+            <!-- destination flex gallery section -->
+            <h3>Ancient Sites!</h3>
+            <br>
+            <p>Archaeology aims to answer our questions about the past and, with any luck, give us some
+            perspective on our present and future. But sometimes, artifacts raise mysteries that may never
+            be solved.</p>
+            <br>
             <div class="flex">
-                <div class="showcase_box showcase__img-dest1">
-                    <h5>Thailand</h5>
+                <div class="showcase_ball showcase__img-dest1">
+                    <h5>Abu Simbel</h5>
+                    <p>Egypt</p>
                 </div>
-                <div class="showcase_box showcase__img-dest2">
-                    <h5>United States</h5>
+                <div class="showcase_ball showcase__img-dest2">
+                    <h5>Giza Pyramids</h5>
+                    <p>Egypt</p>
                 </div>
-                <div class="showcase_box showcase__img-dest3">
-                    <h5>Europe</h5>
+                <div class="showcase_ball showcase__img-dest3">
+                    <h5>Machu Picchu</h5><br>
+                    <p>Peru</p>
                 </div>
             </div>
+            <!-- destination flex gallery section -->
+            <h3>Asia Pacific!</h3>
             <br>
-            <button class="enter"><a href="destinations.html">Find Out More</a></button> 
-        </div>
-    </section>
+            <p>The sights, scents and sounds of Asia are uniquely exotic.The rolling verdant landscape
+            of Vietnam, the sensory overload of Indonesia to the graceful side of Thai culture all testify
+            to Asia’s broad scope of appeal.</p>
+            <br>
+            <div class="flex">
+                <div class="showcase_ball showcase__img-dest4">
+                    <h5>Koh Pan Ang</h5>
+                    <p>Thailand</p>
+                </div>
+                <div class="showcase_ball showcase__img-dest5">
+                    <h5>Mt. Fuji</h5>
+                    <p>Japan</p>
+                </div>
+                <div class="showcase_ball showcase__img-dest6">
+                    <h5>South East</h5>
+                    <p>Singapore</p>
+                </div>
+            </div>
+            <!-- destination flex gallery section -->
+            <h3>European Escapes!</h3>
+            <br>
+            <p>Castles are amazing places to explore as a family. Younger kids can enjoy playing the chivalrous knight
+            or the warrior queen, older children can soak up the fascinating history, and parents can marvel at the architectural
+            prowess involved in creating such incredible edifices.</p>
+            <br>
+            <div class="flex">
+                <div class="showcase_ball showcase__img-dest7">
+                    <h5>Innusbruck</h5>
+                    <p>Austria</p>
+                </div>
+                <div class="showcase_ball showcase__img-dest8">
+                    <h5>Prague</h5>
+                    <p>Czech</p>
+                </div>
+                <div class="showcase_ball showcase__img-dest9">
+                    <h5>Schwangau</h5>
+                    <p>Germany</p>
+                </div>
+            </div>
+            <!-- destination flex gallery section -->
+            <h3>Oceanic Wonders!</h3>
+            <br>
+            <p>Whether you’re looking for adventure, journeys, nature, great food and wine, events and culture,
+            islands and beaches to relax on or to connect with the oldest culture on earth, there’s nothing like
+            a holiday in Australia.</p>
+            <div class="flex">
+                <div class="showcase_ball showcase__img-dest10">
+                    <h5>Gold Coast</h5>
+                    <p>Australia</p>
+                </div>
+                <div class="showcase_ball showcase__img-dest11">
+                    <h5>Queenstown</h5>
+                    <p>New Zealand</p>
+                </div>
+            </div>
 
-<!-- activity section content -->
-    <!-- mobile & tablet: showcase img = 90% width -->
-    <!-- desktop: showcase img = 300x300 circle -->
-    <section class="content">
-        <div class="section__container">
-            <h3>Activity Choices</h3>
+            
+            <!--  re structure  -->
             <br>
-            <p>At 82­° NorthWest, we have the facilities & connections world wide to ensure a pleasant travel
-            experience throughout your entire adventure. Select from many different accommodation structures,
-            transport options, ski & hiking equipment hire, and much much more!</p>
-            <br>
-            <div class="flex">
-                <div class="showcase_box showcase_img-adv">
-                    <h5>Adventure</h5>
-                </div>
-                <div class="showcase_box showcase_img-rel">
-                    <h5>Relaxation</h5>
-                </div>
-                <div class="showcase_box showcase_img-trk">
-                    <h5>Trekking</h5>
-                </div>
-            </div>
-            <br>
-            <p> EDIT!</p>
-            <br>
-            <button class="enter"><a href="activities.html">Find Out More</a></button> 
-        </div>
-    </section>
-
- <!-- packages section content -->
-    <!-- mobile & tablet: showcase img = 90% width -->
-    <!-- desktop: showcase img = 300x300 circle -->
-    <section class="content">
-        <div class="section__container">
-            <h3>Packages & Groups</h3>
-            <br>
-            <p>Offering specialized & personally tailored holiday packages, to get the best deal possible,
-            while exploring & experiencing ever possibility without the need to plan ahead. 82° NorthWest
-            supplies you with the latest and greatest holidays imaginable.
-            </p>
-            <br>
-            <div class="flex">
-                <div class="showcase_box showcase_img-grp1">
-                    <h5>Group Getaways</h5>
-                </div>
-                <div class="showcase_box showcase_img-grp2">
-                    <h5>School Trips</h5>
-                </div>
-                <div class="showcase_box showcase_img-grp3">
-                    <h5>Private Dining</h5>
-                </div>
-            </div>
-            <br>
-            <button class="enter"><a href="packages.html">Find Out More</a></button> 
+            <!-- non-linked buttons -->
+            <button class="enter">Find out more</button> 
         </div>
     </section>
 
@@ -228,7 +218,6 @@
             Site hosted on github pages</h6>
         </div>
     </footer>
-
 </div><!-- div.app ends here -->
 
 </div><!-- div.background__home -->

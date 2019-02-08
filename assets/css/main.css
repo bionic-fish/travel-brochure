@@ -31,14 +31,12 @@ a {
 }
 
 /* navigation */
-#navigation h1 {
-    font-size: 2em;
-    margin-top: 40px;
-}
-#navigation p {
-    font-size: 1em;
-    
-    font-family: 'Shadows Into Light', cursive;
+.nav__flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .lrg-nav {
     margin-top: 45px; 
@@ -52,19 +50,21 @@ a {
     transition-duration: 500ms;
     transition-timing-function: ease-in-out;
     transition-property: all;
-    
-    /* text-decoration: underline; */
 }
 .lrg-nav a:hover {
     background-color: rgba(0,0,0,0.2);
     font-weight: bolder;
     border-radius: 1px 14px;
 }
-.lrg-nav p {
+#navigation h1 {
+    font-size: 2em;
+    margin-top: 40px;
+}
+#navigation p {
+    font-size: 1em;
     color: #fff;
     font-family: 'Shadows Into Light', cursive;
 }
-
 /* generic container for desktop placement */
 .container,
 .section__container {
@@ -195,6 +195,29 @@ form input[type="submit"]:hover {
 form input::placeholder {
     color: #fff;
 }
+/* footer props */
+footer.footer {
+    border-top: 4px solid #fff;
+    padding: 10px 0px;
+}
+footer .flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .flex .flex__item {
+    margin: 10px auto;
+}
+footer .flex .flex__item {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px auto;
+    width: 50%;
+    padding: 5px;
+
+}
+
 /* main button props */
 button.enter,
 button.enter__act {
@@ -260,12 +283,17 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
 .showcase_img-grp2 {background-image: url(../img/groups2.jpg);}
 .showcase_img-grp3 {background-image: url(../img/groups3.jpg);}
 
-.showcase_img-dest1 {background-image: url(../img/dest1.jpg);}
-.showcase_img-dest2 {background-image: url(../img/dest2.jpg);}
-.showcase_img-dest3 {background-image: url(../img/dest3.jpg);}
-.showcase_img-dest4 {background-image: url(../img/dest4.jpeg);}
-.showcase_img-dest5 {background-image: url(../img/dest5.jpeg);}
-.showcase_img-dest6 {background-image: url(../img/dest6.jpeg);}
+.showcase__img-dest1 {background-image: url(../img/dest1.jpg);}
+.showcase__img-dest2 {background-image: url(../img/dest2.jpeg);}
+.showcase__img-dest3 {background-image: url(../img/dest3.jpg);}
+.showcase__img-dest4 {background-image: url(../img/dest4.jpg);}
+.showcase__img-dest5 {background-image: url(../img/dest5.jpeg);}
+.showcase__img-dest6 {background-image: url(../img/dest6.jpg);}
+.showcase__img-dest7 {background-image: url(../img/dest7.jpg);}
+.showcase__img-dest8 {background-image: url(../img/dest8.jpg);}
+.showcase__img-dest9 {background-image: url(../img/dest9.jpg);}
+.showcase__img-dest10 {background-image: url(../img/dest10.jpeg);}
+.showcase__img-dest11 {background-image: url(../img/dest11.jpg);}
 
 .tall__box {
     width: 100%;
@@ -284,33 +312,14 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
     text-decoration: underline;
     letter-spacing: 1px;
 }
-.nav__flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
-    /* margin: 10px auto; */
-}
+
 /* hide heading break on mobile */
 .hideOnMob {
     visibility: hidden;
 }
-/* media query for tablet devices betweeen [960px - 1300px] */
-/* @media screen and (max-width: 1300px) { */
-    /* #main h2 {
-        font-size:1em;
-        text-shadow: 1px 1px #000;
-       
-        
-    }
-    #main h4 {
-        font-size: 1em;
-        text-shadow: 1px 1px #000;
-    }
-} */
-/* media query for desktop */
+
+
+/* media query for desktop [screen device above: 960px] */
 @media screen and (min-width: 960px) {
     .container {
         max-width: 1800px;
@@ -370,9 +379,6 @@ button.enter__act:hover {background-color: rgba(240, 141, 12, 0.9);}
         display: flex;
         flex-direction: row;
     }
-    footer.footer {
-        height: 70px;
-}
     header.header{
         padding: 0;
         margin: 0 auto;
